@@ -6,8 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import com.jason.domain.Admin;
-import com.jason.service.AdminService;
+import com.jason.hrms.domain.Admin;
+import com.jason.hrms.service.AdminService;
 
 /**
  * 配置spring和junit整合，junit启动时加载springIOC容器 spring-test,junit

@@ -1,8 +1,8 @@
 package com.jason.util;
 
-import com.jason.domain.Department;
-import com.jason.domain.Employee;
-import com.jason.domain.Position;
+import com.jason.hrms.domain.Department;
+import com.jason.hrms.domain.Employee;
+import com.jason.hrms.domain.Position;
 
 public class IntegrateObject {
     /**

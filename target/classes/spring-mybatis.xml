@@ -30,7 +30,7 @@
     </bean>
     <!-- MyBatis 自动扫描加载 Sql 映射文件/接口 -->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer"
-        p:basePackage="com.jason.dao" p:sqlSessionFactoryBeanName="sqlSessionFactory">
+          p:basePackage="com.jason.hrms.dao" p:sqlSessionFactoryBeanName="sqlSessionFactory">
 
     </bean>
     <!-- JDBC 事务管理器 -->

@@ -6,13 +6,13 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>hrms_main</title>
 <link rel="stylesheet" type="text/css"
-    href="${pageContext.request.contextPath}/jquery-easyui-1.3.3/themes/default/easyui.css">
+    href="${pageContext.request.contextPath}/jquery-easyui-1.5.2/themes/bootstrap/easyui.css">
 <link rel="stylesheet" type="text/css"
-    href="${pageContext.request.contextPath}/jquery-easyui-1.3.3/themes/icon.css">
+    href="${pageContext.request.contextPath}/jquery-easyui-1.5.2/themes/icon.css">
 <script type="text/javascript"
-    src="${pageContext.request.contextPath}/jquery-easyui-1.3.3/jquery.min.js"></script>
+    src="${pageContext.request.contextPath}/jquery-easyui-1.5.2/jquery.min.js"></script>
 <script type="text/javascript"
-    src="${pageContext.request.contextPath}/jquery-easyui-1.3.3/jquery.easyui.min.js"></script>
+    src="${pageContext.request.contextPath}/jquery-easyui-1.5.2/jquery.easyui.min.js"></script>
 <script type="text/javascript">
     var url;
     function addTab(url, text, iconCls) {
@@ -48,7 +48,7 @@
     }
 </script>
 <body class="easyui-layout">
-    <div region="north" style="height: 78px; background-color: #ffff">
+    <div region="north" style="background-color: #ffff">
         <table width="100%">
             <tr>
                 <td width="50%"></td>
@@ -67,7 +67,7 @@
                     <font color="grey" size="10">Human Affairs Management System</font>
                 </div>
                 <div align="center" style="padding-top: 20px;">
-                    <font style="font-size: 20px;">www.shiyanlou.com</font>
+                    <font style="font-size: 20px;">测试中..</font>
                 </div>
             </div>
         </div>
@@ -76,19 +76,16 @@
         title="Navigation Menu" split="true">
         <div class="easyui-accordion">
             <div title="Department Manage"
-                data-options="selected:true,iconCls:'icon-shujias'"
-                style="padding: 10px; height: 10px;">
+                data-options="selected:true,iconCls:'icon-shujias'">
                 <a href="javascript:openTab(' Department Info','deptManage.jsp')"
                     class="easyui-linkbutton" data-options="plain:true"
-                    style="width: 150px;"> Department Info</a>
+                    style="margin:0 auto;width: 150px;"> Department Info</a>
             </div>
 
             <div title="Position Manage"
-                data-options="selected:true,iconCls:'icon-schoolceo'"
-                style="padding: 10px; height: 10px;">
+                data-options="selected:true,iconCls:'icon-schoolceo'">
                 <a href="javascript:openTab(' Position Info','positionManage.jsp')"
-                    class="easyui-linkbutton" data-options="plain:true"
-                    style="width: 150px;"> Position Info</a>
+                    class="easyui-linkbutton" data-options="plain:true"> Position Info</a>
             </div>
 
             <div title="Employee Manage" data-options="iconCls:'icon-students' "
@@ -99,8 +96,7 @@
             </div>
 
             <div title="Post Manage"
-                data-options="selected:true,iconCls:'icon-wenzhang'"
-                style="padding: 10px; height: 10px;">
+                data-options="selected:true,iconCls:'icon-wenzhang'">
                 <a href="javascript:openTab(' Post Info','postManage.jsp')"
                     class="easyui-linkbutton" data-options="plain:true"
                     style="width: 150px;"> Post Info</a>

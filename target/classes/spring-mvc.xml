@@ -10,7 +10,7 @@
      http://www.springframework.org/schema/mvc/spring-mvc-4.2.xsd">
 
     <!-- 自动扫描该包，Spring MVC 会将包下用 @Controller 注解的类注册为 Spring 的 controller -->
-    <context:component-scan base-package="com.jason.controller" />
+    <context:component-scan base-package="com.jason.hrms.controller" />
     <!-- 设置默认配置方案 -->
     <mvc:annotation-driven />
     <!-- 静态资源访问 -->
@@ -31,7 +31,7 @@
     <mvc:interceptors>
         <mvc:interceptor>
             <mvc:mapping path="/*" />
-            <bean class="com.jason.interceptor.LoginInterceptor" />
+            <bean class="com.jason.hrms.interceptor.LoginInterceptor" />
         </mvc:interceptor>
     </mvc:interceptors>
 </beans>

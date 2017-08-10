@@ -3,7 +3,19 @@
   <groupId>com.jason</groupId>
   <artifactId>hrms</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <packaging>war</packaging>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <packaging>war</packaging>
 
     <name>hrms</name>
     <url>http://maven.apache.org</url>
@@ -187,9 +199,10 @@
             <version>20160810</version>
         </dependency>
         <dependency>
-            <groupId>com.baidu</groupId>
+            <groupId>org.webjars.bower</groupId>
             <artifactId>ueditor</artifactId>
-            <version>1.1.2</version>
+            <version>1.4.3</version>
+
         </dependency>
 
         <dependency>

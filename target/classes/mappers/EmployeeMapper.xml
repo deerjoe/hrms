@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.jason.dao.EmployeeDao">
+<mapper namespace="com.jason.hrms.dao.EmployeeDao">
     <!-- 自定义结果集 -->
     <resultMap type="Employee" id="EmployeeResult">
         <id property="id" column="emp_id" />
