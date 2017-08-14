@@ -1,7 +1,11 @@
 package com.jason.menu.domain;
+
 import java.io.Serializable;
-public class Menu implements Serializable{
-    private static final long serialVersionUID = 1L;
+
+/**
+ * @author 
+ */
+public class Menu implements Serializable {
     private Integer id;
 
     private Integer parentid;
@@ -17,6 +21,10 @@ public class Menu implements Serializable{
     private Boolean isheader;
 
     private Boolean isopen;
+
+    private Integer order;
+
+    private static final long serialVersionUID = 1L;
 
     public Integer getId() {
         return id;
@@ -82,17 +90,11 @@ public class Menu implements Serializable{
         this.isopen = isopen;
     }
 
-    @Override
-    public String toString() {
-        return "Menu{" +
-                "id=" + id +
-                ", parentid=" + parentid +
-                ", text='" + text + '\'' +
-                ", icon='" + icon + '\'' +
-                ", url='" + url + '\'' +
-                ", targettype='" + targettype + '\'' +
-                ", isheader=" + isheader +
-                ", isopen=" + isopen +
-                '}';
+    public Integer getOrder() {
+        return order;
+    }
+
+    public void setOrder(Integer order) {
+        this.order = order;
     }
 }
